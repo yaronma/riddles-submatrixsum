@@ -1,32 +1,42 @@
-# Max Rectangle Algorithm
-Calculate the max rectangle that can be inserted into container rectangle with embedded rectangles
+# Find Sub-Matrix Sum
+For a given matrix, find the sum of any sub-matrix in O(1)
 
-## The Problem:
-Given a container rectangle (I will simply call it "container") and a set of rectangles we need to calculate the maximum rectangle that we can add to the container without intersecting the container or any embedded rectangles.
+## Example
+Given the following matrix:
 
-The following image illustrates the problem:
+![Sample Matrix](images/matrix.png)
 
-![Image of Problem](images/example1.png)
+Calculate the following sub matrixes 
 
-And the solution is:
+![Sample Sub-Matrixes](imagessub.matrix.png)
 
-![Image of Solution](images/example1.solution.png)
+# The Output
+The output of the code is:
 
+```javascript
+Started...
+Building and processing matrix.
+Matrix
+    45     0    14     3     4    30     6    12
+    34    14    22     9    34    56    17    34
+     6    12    15     3    49    49     8    72
+    16    78     5    42    63     1    48    18
+     2    24    12    20    56    11    29    13
+    32     9    33     2    33     6    19    21
+    58    37    10    21    20    15    98    19
+    17    55    19     1    13    20    17    43
+Sum Matrix
+    45    45    59    62    66    96   102   114
+    79    93   129   141   179   265   288   334
+    85   111   162   177   264   399   430   548
+   101   205   261   318   468   604   683   819
+   103   231   299   376   582   729   837   986
+   135   272   373   452   691   844   971  1141
+   193   367   478   578   837  1005  1230  1419
+   210   439   569   670   942  1130  1372  1604
 
-#### Remarks:
-- We use the Y-inverted axis system where the upper-left corner is marked as 0,0 and x is growing while moving to the left and y is growing while moving down.
-- The rectangles (including the container) are expressed as 4 integers Rect=(l, r, t, b) 
-where: 
-l is the left x coordinate
-r is the right x coordinate
-t is the top y coordinate
-b is the bottom y coordinate
-
-- Each rectangle can be placed anywhere (even with negative coordinates)
-- The rectangles can be place inside or outside or intersecting each other (and the container)
-
-## The Target:
-After placing the container and all the rectangles, find the maximum possible rectangle that can be placed with in the container while not intersecting any of the rectangles (it may touch the other rectangles)
-
-# The Solution
-[Press here for the solution!](docs/solution.md)
+Red rectangle [1,1 => 1,4] sum is 128
+Blue rectangle [1,4 => 2,6] sum is 125
+Purple rectangle [3,4 => 7,6] sum is 383
+Completed.
+```
