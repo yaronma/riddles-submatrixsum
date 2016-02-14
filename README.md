@@ -48,7 +48,7 @@ Sum Matrix
    193   367   478   578   837  1005  1230  1419
    210   439   569   670   942  1130  1372  1604
 
-Red rectangle [1,1 => 1,4] sum is 128
+Red rectangle [1,1 => 1,3] sum is 104
 Blue rectangle [1,4 => 2,6] sum is 125
 Purple rectangle [3,4 => 7,6] sum is 383
 Completed.
