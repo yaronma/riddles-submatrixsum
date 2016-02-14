@@ -1,6 +1,19 @@
 # Find Sub-Matrix Sum
 For a given matrix, find the sum of any sub-matrix in O(1)
 
+# The Algorithm
+In order to calculate the sum in O(1) we will do the following pre-processing:
+for each cell (x,y) we will caclulate the sum S(x,y) as the sum of the sub matrix starting with (0,0) up to (x,y).
+
+Then the sum S of the sub matrix (x1,y1)-(x2,y2) is:
+```javascript
+S = S(x2,y2) - S(y1-1,x2) -S(y2, x1-1) + S(y1-1, x1-1)
+```
+
+This is illustrated in the following image:
+
+![Pre-Processing](images/preprocessing.png)
+
 ## Example
 Given the following matrix:
 
