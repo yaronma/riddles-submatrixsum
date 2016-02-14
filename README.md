@@ -7,7 +7,7 @@ for each cell (x,y) we will caclulate the sum S(x,y) as the sum of the sub matri
 
 Then the sum S of the sub matrix (x1,y1)-(x2,y2) is:
 ```javascript
-S = S(x2,y2) - S(y1-1,x2) -S(y2, x1-1) + S(y1-1, x1-1)
+S = S(x2,y2) - S(y1-1,x2) - S(y2, x1-1) + S(y1-1, x1-1)
 ```
 
 This is illustrated in the following image:
