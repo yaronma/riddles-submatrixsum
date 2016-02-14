@@ -50,6 +50,6 @@ Sum Matrix
 
 Red rectangle [1,1 => 1,3] sum is 104
 Blue rectangle [1,4 => 2,6] sum is 125
-Purple rectangle [3,4 => 7,6] sum is 383
+Purple rectangle [3,4 => 7,6] sum is 381
 Completed.
 ```
