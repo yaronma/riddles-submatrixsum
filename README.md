@@ -8,7 +8,7 @@ Given the following matrix:
 
 Calculate the following sub matrixes 
 
-![Sample Sub-Matrixes](imagessub.matrix.png)
+![Sample Sub-Matrixes](images/sub.matrix.png)
 
 # The Output
 The output of the code is:
