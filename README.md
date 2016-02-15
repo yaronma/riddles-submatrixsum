@@ -14,6 +14,8 @@ This is illustrated in the following image:
 
 ![Pre-Processing](images/preprocessing.png)
 
+S(0,0)-(4,4) = S5-S3-S2+S4  // We add S4 because we subtracted it twice (in S3 and S2)
+
 ## Example
 Given the following matrix:
 
