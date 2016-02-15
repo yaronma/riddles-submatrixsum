@@ -42,7 +42,7 @@ public class Main {
 		
 		Matrix matrix = new Matrix(data);
 		
-		// Make all the rows and columns sums
+		// Calculate all the sub-matrixes sum
 		matrix.process();
 		
 		System.out.println(matrix);
