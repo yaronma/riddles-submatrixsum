@@ -15,7 +15,10 @@ This is illustrated in the following image:
 ![Pre-Processing](images/preprocessing.png)
 
 ```javascript
-S(0,0)-(4,4) = S5-S3-S2+S4  // We add S4 because we subtracted it twice (in S3 and S2)
+
+// Let S5 be S(4,4)  -- The sum of the sub-matrix that cell (4,4) is it's lower-right cell
+
+S1 = S5-S3-S2+S4  // We add S4 because we subtracted it twice (in S3 and S2)
 ```
 
 ## Example
