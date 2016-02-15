@@ -145,16 +145,20 @@ public class Matrix {
 	 */
 	public void process() {
 
+		// Set the (0,0) cell
 		sumData[0][0] = data[0][0];
 
+		// Calculate the sub matrixes of the first row
 		for (int x = 1; x < n; x++) {
 			sumData[0][x] = sumData[0][x - 1] + data[0][x];
 		}
 
+		// Calculate the sub matrixes of the first colomn
 		for (int y = 1; y < m; y++) {
 			sumData[y][0] = sumData[y - 1][0] + data[y][0];
 		}
 
+		// Calculate sub matrixes of all other cells based on oriviously calculated vales
 		for (int y = 1; y < m; y++) {
 			for (int x = 1; x < n; x++) {
 				sumData[y][x] = sumData[y][x - 1] + sumData[y - 1][x] + data[y][x] - sumData[y - 1][x - 1];
