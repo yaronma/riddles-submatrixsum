@@ -23,13 +23,11 @@ public class Matrix {
 
 	public Matrix(int[][] data) {
 		
-		this.n = data.length;
-		this.m = data[0].length;
-		
-		if (n < 1 || m < 1) {
+		if (data == null || data.length == 0 || data[0] == null || data[0].length == 0) { 
 			throw new IllegalArgumentException();
 		}
-
+		this.n = data.length;
+		this.m = data[0].length;
 		this.data = data;
 		sumData = new int[m][n];
 	}
