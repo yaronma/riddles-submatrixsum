@@ -25,7 +25,7 @@ public class Main {
 	};
 
 	public final Rect rectRed =  new Rect(1,1,1,4);
-	public final Rect rectBlue = new Rect(1,4,2,6);
+	public final Rect rectBlue = new Rect(4,1,6,2);
 	public final Rect rectPurple = new Rect(3,4,7,6);
 	
 	
