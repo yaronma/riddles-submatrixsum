@@ -56,7 +56,7 @@ Sum Matrix
    210   439   569   670   942  1130  1372  1604
 
 Red rectangle [1,1 => 1,3] sum is 104
-Blue rectangle [1,4 => 2,6] sum is 125
-Purple rectangle [3,4 => 7,6] sum is 381
+Blue rectangle [4,1 => 6,2] sum is 213
+Purple rectangle [3,4 => 6,7] sum is 381
 Completed.
 ```
